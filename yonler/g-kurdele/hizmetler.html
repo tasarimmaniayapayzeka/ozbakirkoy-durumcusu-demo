@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#64AB03">
+<title>Hizmetler · Öz Bakırköy Dürümcüsü · Yön G, Kurdele</title>
+<meta name="description" content="Özel gün ve organizasyon, paket servis ve temiz mutfak: Öz Bakırköy Dürümcüsü'nün hizmetleri.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<script>
+  // Hareket açıksa giriş animasyonlarının başlangıç durumu hazırlanır; GSAP gelmezse 3 sn sonra geri alınır.
+  (function () {
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-motion');
+      setTimeout(function () { if (!window.gsap) document.documentElement.classList.remove('js-motion'); }, 3000);
+    }
+  })();
+</script>
+<link rel="stylesheet" href="stil.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Ana sayfa",
+      "item": "https://ozbakirkoydurumcusu.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Hizmetler",
+      "item": "https://ozbakirkoydurumcusu.com/hizmetler/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="marka" aria-label="Öz Bakırköy Dürümcüsü, ana sayfa">Öz Bakırköy Dürümcüsü</a>
+    <ul class="nav-links">
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      <li><a href="menu.html">Menü</a></li>
+      <li><a href="hizmetler.html" class="is-aktif" aria-current="page">Hizmetler</a></li>
+      <li><a href="kampanyalar.html">Kampanyalar</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+    <a class="btn btn--ana btn-tel" href="tel:+902125710420"><i class="ph ph-phone"></i>0212 571 04 20</a>
+    <a class="nav-call-icon" href="tel:+902125710420" aria-label="Ara: 0212 571 04 20"><i class="ph ph-phone"></i></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Menüyü aç"><i class="ph ph-list"></i></button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet" aria-hidden="true">
+  <div class="sheet-top">
+    <span class="marka" aria-hidden="true">Öz Bakırköy Dürümcüsü</span>
+    <button class="menu-toggle" type="button" data-close aria-label="Menüyü kapat" style="display:inline-grid"><i class="ph ph-x"></i></button>
+  </div>
+  <nav aria-label="Mobil menü">
+    <a href="index.html">Ana sayfa</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="menu.html">Menü</a>
+    <a href="hizmetler.html" class="is-aktif" aria-current="page">Hizmetler</a>
+    <a href="kampanyalar.html">Kampanyalar</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+  <a class="btn btn--ana" href="tel:+902125710420"><i class="ph ph-phone"></i>0212 571 04 20</a>
+</div>
+
+<main>
+  <section class="sayfa-bas" data-ilk aria-labelledby="baslik">
+    <div class="wrap">
+      <nav class="yol" aria-label="Konum"><a href="index.html">Ana sayfa</a><span class="ayrac" aria-hidden="true">/</span><span aria-current="page">Hizmetler</span></nav>
+      <h1 class="sayfa-baslik sayfa-baslik--uzun" id="baslik">Hizmetler</h1>
+      <p class="lead">Kalabalık sofralar için salon, evinize paket servis, temiz mutfak. Hepsinin ortasında aynı ocak.</p>
+      <figure class="sayfa-foto kare" data-pop><img src="../../kaynak/gorseller-yz/ek-2026-11-08/salon-aksam.jpg" width="1920" height="1072" alt="Akşam ışığında salon: gri tuğla duvarlar, ahşap kepenkler, yeşil sandalyeler" fetchpriority="high"></figure>
+    </div>
+  </section>
+
+  <section class="bolum bolum--krem" aria-labelledby="liste-baslik">
+    <div class="wrap">
+      <h2 class="sr" id="liste-baslik">Hizmet listesi</h2>
+      <ul class="hizmet-izgara">
+        <li class="hizmet-hucre"><i class="ph ph-confetti hizmet-ikon" aria-hidden="true"></i><h3><a href="hizmetler/ozel-gun-ve-organizasyon.html">Özel gün ve organizasyon</a></h3><p>Düğün, nişan ve söz yemeklerinizi, iş ve sosyal toplantılarınızı salonumuzda ağırlıyoruz.</p><span class="ok-yazi">Ayrıntı <i class="ph ph-arrow-right" aria-hidden="true"></i></span></li>
+        <li class="hizmet-hucre"><i class="ph ph-moped hizmet-ikon" aria-hidden="true"></i><h3><a href="hizmetler/hizli-servis.html">Paket servis</a></h3><p>Hızlı servisle aynı lezzet evinize gelir.</p><span class="ok-yazi">Ayrıntı <i class="ph ph-arrow-right" aria-hidden="true"></i></span></li>
+        <li class="hizmet-hucre"><i class="ph ph-seal-check hizmet-ikon" aria-hidden="true"></i><h3><a href="hizmetler/kaliteli-hizmet.html">Temiz mutfak</a></h3><p>Ürünlerimiz hijyen koşullarında, temiz mutfak anlayışıyla hazırlanır.</p><span class="ok-yazi">Ayrıntı <i class="ph ph-arrow-right" aria-hidden="true"></i></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="bolum bolum--orman kampanya-serit" aria-labelledby="kampanya-baslik">
+    <div class="wrap kampanya-ic">
+      <figure class="kare" data-pop><img src="../../kaynak/gorseller-yz/ek-2026-11-08/izgara-alev.jpg" width="1920" height="1072" alt="Kömür ateşinde, alevlerin arasında pişen etler" loading="lazy"></figure>
+      <div data-yuksel>
+        <h2 class="baslik-2" id="kampanya-baslik">Et sizden, pişirme bizden.</h2>
+        <p>Etinizi getirin, ustalarımız kömür ateşinde pişirsin.</p>
+        <a class="btn btn--yaprak" href="kampanyalar.html">Kampanyaya bak <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="alt">
+  <div class="wrap alt-grid">
+    <div class="alt-marka">
+      <a class="alt-logo" href="index.html" aria-label="Öz Bakırköy Dürümcüsü, ana sayfa"><img src="../../kaynak/logo/logo-rozet-320.png" width="320" height="320" alt="Öz Bakırköy Dürümcüsü logosu, since 1998" loading="lazy"></a>
+      <p>Cevizlik Mah. Ebuziya Caddesi, Şehit Nusret Sokak No: 2, Bakırköy / İstanbul</p>
+      <p><a href="tel:+902125710420">0212 571 04 20</a> · <a href="tel:+902125708130">0212 570 81 30</a></p>
+      <a class="ig" href="https://www.instagram.com/ozbakirkoydurum/" target="_blank" rel="noopener"><i class="ph ph-instagram-logo" aria-hidden="true"></i>@ozbakirkoydurum</a>
+    </div>
+    <nav aria-labelledby="alt-menu">
+      <h2 id="alt-menu">Menü</h2>
+      <a href="menu/kebaplar.html">Porsiyon kebaplar</a>
+      <a href="menu/durumler.html">Dürümler</a>
+      <a href="menu/corba-ve-salata.html">Çorba ve salata</a>
+      <a href="menu/tatlilar.html">Tatlılar</a>
+    </nav>
+    <nav aria-labelledby="alt-hizmet">
+      <h2 id="alt-hizmet">Hizmetler</h2>
+      <a href="hizmetler/ozel-gun-ve-organizasyon.html">Özel gün ve organizasyon</a>
+      <a href="hizmetler/hizli-servis.html">Paket servis</a>
+      <a href="hizmetler/kaliteli-hizmet.html">Temiz mutfak</a>
+    </nav>
+    <nav aria-labelledby="alt-kurumsal">
+      <h2 id="alt-kurumsal">Kurumsal</h2>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="kampanyalar.html">Kampanyalar</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </div>
+  <div class="wrap alt-son"><span class="copy">© 2026 Öz Bakırköy Dürümcüsü</span><span class="since">Since 1998</span></div>
+</footer>
+
+<nav class="altbar" aria-label="Hızlı işlemler">
+  <a href="tel:+902125710420"><i class="ph ph-phone" aria-hidden="true"></i>Ara</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=40.97535567930429,28.872827115819305" target="_blank" rel="noopener"><i class="ph ph-navigation-arrow" aria-hidden="true"></i>Yol tarifi</a>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="betik.js"></script>
+</body>
+</html>

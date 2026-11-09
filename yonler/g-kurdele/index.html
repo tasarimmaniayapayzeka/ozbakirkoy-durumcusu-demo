@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#64AB03">
+<title>Öz Bakırköy Dürümcüsü · Yön G, Kurdele</title>
+<meta name="description" content="Öz Bakırköy Dürümcüsü: 1998'den beri Bakırköy'de zırh kıyması, kömür ateşinde kebap ve sıcak soslu lavaşta dürüm.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<script>
+  // Hareket açıksa giriş animasyonlarının başlangıç durumu hazırlanır; GSAP gelmezse 3 sn sonra geri alınır.
+  (function () {
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-motion');
+      setTimeout(function () { if (!window.gsap) document.documentElement.classList.remove('js-motion'); }, 3000);
+    }
+  })();
+</script>
+<link rel="stylesheet" href="stil.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Öz Bakırköy Dürümcüsü",
+  "foundingDate": "1998",
+  "servesCuisine": [
+    "Kebap",
+    "Dürüm"
+  ],
+  "telephone": "+90 212 571 04 20",
+  "email": "info@ozbakirkoydurumcusu.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Cevizlik Mah. Ebuziya Caddesi, Şehit Nusret Sokak No: 2",
+    "addressLocality": "Bakırköy",
+    "addressRegion": "İstanbul",
+    "addressCountry": "TR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.97535567930429,
+    "longitude": 28.872827115819305
+  },
+  "hasMenu": "https://ozbakirkoydurumcusu.com/menu/",
+  "sameAs": [
+    "https://www.instagram.com/ozbakirkoydurum/"
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="marka" aria-label="Öz Bakırköy Dürümcüsü, ana sayfa">Öz Bakırköy Dürümcüsü</a>
+    <ul class="nav-links">
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      <li><a href="menu.html">Menü</a></li>
+      <li><a href="hizmetler.html">Hizmetler</a></li>
+      <li><a href="kampanyalar.html">Kampanyalar</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+    <a class="btn btn--ana btn-tel" href="tel:+902125710420"><i class="ph ph-phone"></i>0212 571 04 20</a>
+    <a class="nav-call-icon" href="tel:+902125710420" aria-label="Ara: 0212 571 04 20"><i class="ph ph-phone"></i></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Menüyü aç"><i class="ph ph-list"></i></button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet" aria-hidden="true">
+  <div class="sheet-top">
+    <span class="marka" aria-hidden="true">Öz Bakırköy Dürümcüsü</span>
+    <button class="menu-toggle" type="button" data-close aria-label="Menüyü kapat" style="display:inline-grid"><i class="ph ph-x"></i></button>
+  </div>
+  <nav aria-label="Mobil menü">
+    <a href="index.html" aria-current="page" class="is-aktif">Ana sayfa</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="menu.html">Menü</a>
+    <a href="hizmetler.html">Hizmetler</a>
+    <a href="kampanyalar.html">Kampanyalar</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+  <a class="btn btn--ana" href="tel:+902125710420"><i class="ph ph-phone"></i>0212 571 04 20</a>
+</div>
+
+<main>
+  <section class="hero" data-ilk aria-labelledby="baslik">
+    <div class="wrap hero-grid">
+      <div class="hero-sol">
+        <h1 class="baslik" id="baslik">
+          <span>Zırhla</span>
+          <span>kıyılır, <i class="hap" aria-hidden="true"><img src="../../kaynak/gorseller-yz/pilot-2026-11-08/adana-kebap-koyu.jpg" width="1400" height="1045" alt="" fetchpriority="high" style="object-position:50% 46%"></i></span>
+          <span>közde pişer.</span>
+        </h1>
+        <p class="giris">Bakırköy'de 1998'den beri. Adana, Urfa ve dürümlerimizin eti ustanın elinde zırhla kıyılır<span class="uzun">, kömür ateşinde pişer</span>.</p>
+        <div class="dugmeler">
+          <a class="btn btn--ana" href="menu.html">Menüyü gör <i class="ph ph-arrow-right"></i></a>
+          <a class="btn btn--cizgi" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.97535567930429,28.872827115819305" target="_blank" rel="noopener"><i class="ph ph-navigation-arrow"></i>Yol tarifi</a>
+        </div>
+      </div>
+      <img class="usta" src="../../kaynak/logo/logo-kesik.webp" width="888" height="872" alt="Öz Bakırköy Dürümcüsü logosu: tamam işareti yapan aşçı usta; kurdelede işletmenin adı ve since 1998" fetchpriority="high">
+    </div>
+    <div class="rozet" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><defs><path id="halka" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs><text><textPath href="#halka" textLength="468" lengthAdjust="spacing">ET SİZDEN • PİŞİRME BİZDEN • </textPath></text></svg>
+      <i class="ph ph-fork-knife"></i>
+    </div>
+    <div class="kurdele-kap">
+      <i class="k-arka k-arka--sol"></i><i class="k-arka k-arka--sag"></i>
+      <nav class="k-on" aria-label="Menü kategorileri">
+        <a href="menu/kebaplar.html">Kebaplar</a><i></i><a href="menu/durumler.html">Dürümler</a><i></i><a href="menu/corba-ve-salata.html">Çorba ve salata</a><i></i><a href="menu/tatlilar.html">Tatlılar</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="bolum bolum--krem imza" id="zirh" aria-labelledby="zirh-baslik">
+    <div class="wrap imza-grid">
+      <div class="imza-yazi">
+        <h2 class="kurdele-baslik" id="zirh-baslik" data-yuksel><span>Makine değil, zırh.</span></h2>
+        <p class="lead" data-yuksel>Adana'nın, Urfa'nın ve dürümlerimizin eti kıyma makinesinden geçmez. Usta, eti tahtada zırhla kıyar.</p>
+        <ol class="adimlar">
+          <li class="adim"><b>1</b><h3>Zırhla kıyılır</h3><p>Usta, eti tahtada iki saplı zırh bıçağıyla elde kıyar.</p></li>
+          <li class="adim"><b>2</b><h3>Şişe sarılır</h3><p>Kıyma, ustanın elinde yassı şişe sarılır.</p></li>
+          <li class="adim"><b>3</b><h3>Kömürde pişer</h3><p>Şişler ocak başında, kömür ateşinde pişer.</p></li>
+        </ol>
+      </div>
+      <figure class="kare" data-pop><img src="../../kaynak/gorseller-yz/ek-2026-11-08/zirh-kiyim.jpg" width="1920" height="1072" alt="Usta, eti tahtada iki saplı zırh bıçağıyla kıyıyor; arkada ocak" loading="lazy" style="object-position:38% 50%"><figcaption>Zırh kıyması</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="bolum bolum--yaprak menu-bolum" id="menu" aria-labelledby="menu-baslik">
+    <div class="wrap menu-grid">
+      <figure class="kare kare--dikey kare--sol" data-pop><img src="../../kaynak/gorseller-yz/pilot-2026-11-08/adana-durum-koyu.jpg" width="1200" height="1490" alt="Öz Bakırköy baskılı kâğıdında Adana dürüm" loading="lazy" style="object-position:50% 40%"><figcaption>Adana dürüm</figcaption></figure>
+      <div class="menu-kart" data-yuksel>
+        <h2 class="kurdele-baslik" id="menu-baslik"><a href="menu.html"><span>Menü</span></a></h2>
+        <p class="lead">Kebaplar kömür ateşinde, dürümler sıcak soslu lavaşta. 14 kebap, 6 dürüm, çorba, salata ve tatlılar.</p>
+        <div class="menu-gruplar">
+          <div class="menu-grup">
+            <h3 class="grup-ad"><a href="menu/durumler.html">Dürümler</a></h3>
+            <ul>
+              <li><a href="menu/adana-durum.html"><b>Adana Dürüm</b></a><span class="etiket">Zırh kıyması</span></li>
+              <li><a href="menu/urfa-durum.html"><b>Urfa Dürüm</b></a><span class="etiket">Zırh kıyması</span></li>
+              <li><a href="menu/cop-sis-durum.html"><b>Çöp Şiş Dürüm</b></a></li>
+              <li><a href="menu/ciger-sis-durum.html"><b>Ciğer Şiş Dürüm</b></a></li>
+              <li><a href="menu/yurek-sis-durum.html"><b>Yürek Şiş Dürüm</b></a></li>
+              <li><a href="menu/tavuk-sis-durum.html"><b>Tavuk Şiş Dürüm</b></a></li>
+            </ul>
+          </div>
+          <div class="menu-grup">
+            <h3 class="grup-ad"><a href="menu/kebaplar.html">Kebaplar</a></h3>
+            <ul>
+              <li><a href="menu/adana-kebap.html"><b>Adana Kebap</b></a><span class="etiket">Zırh kıyması</span></li>
+              <li><a href="menu/urfa-kebap.html"><b>Urfa Kebap</b></a><span class="etiket">Zırh kıyması</span></li>
+              <li><a href="menu/beyti-sarma.html"><b>Beyti Sarma</b></a></li>
+              <li><a href="menu/kuzu-pirzola.html"><b>Kuzu Pirzola</b></a></li>
+              <li><a href="menu/patlicanli-kebap.html"><b>Patlıcanlı Kebap</b></a></li>
+              <li><a href="menu/cop-sis.html"><b>Çöp Şiş</b></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-cta"><a class="btn btn--ana" href="menu.html">Menüyü gör <i class="ph ph-arrow-right"></i></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bolum bolum--krem hizmetler-bolum" id="hizmetler" aria-labelledby="hizmet-baslik">
+    <div class="wrap">
+      <h2 class="kurdele-baslik" id="hizmet-baslik" data-yuksel><a href="hizmetler.html"><span>Hizmetler</span></a></h2>
+      <div class="bento">
+        <article class="bento-kampanya">
+          <div class="bento-yazi">
+            <h3><a href="kampanyalar.html">Et sizden, pişirme bizden.</a></h3>
+            <p>Etinizi getirin, ustalarımız kömür ateşinde pişirsin.</p>
+            <span class="ok-yazi">Kampanyaya bak <i class="ph ph-arrow-right" aria-hidden="true"></i></span>
+          </div>
+          <img src="../../kaynak/gorseller-yz/ek-2026-11-08/izgara-alev.jpg" width="1920" height="1072" alt="" loading="lazy" style="object-position:50% 40%">
+        </article>
+        <article class="hizmet"><i class="ph ph-confetti hizmet-ikon" aria-hidden="true"></i><h3><a href="hizmetler/ozel-gun-ve-organizasyon.html">Özel gün ve organizasyon</a></h3><p>Düğün, nişan ve söz yemeklerinizi, iş ve sosyal toplantılarınızı salonumuzda ağırlıyoruz.</p><span class="ok-yazi">Ayrıntı <i class="ph ph-arrow-right" aria-hidden="true"></i></span></article>
+        <article class="hizmet"><i class="ph ph-moped hizmet-ikon" aria-hidden="true"></i><h3><a href="hizmetler/hizli-servis.html">Paket servis</a></h3><p>Hızlı servisle aynı lezzet evinize gelir.</p><a class="btn btn--ana" href="tel:+902125710420"><i class="ph ph-phone"></i>0212 571 04 20</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bolum bolum--orman hakkimizda" id="hakkimizda" aria-labelledby="hakkimizda-baslik">
+    <div class="wrap yil-grid">
+      <div class="yil" aria-hidden="true">1998</div>
+      <div class="yil-metin" data-yuksel>
+        <h2 class="baslik-2" id="hakkimizda-baslik">1998'den beri Bakırköy'de</h2>
+        <p>Cevizlik Mahallesi'nde bir kebap ve dürüm salonu. Urfa'dan Adana'ya, beytiden pirzolaya kebabın her çeşidi kömür ateşinde pişer; kıyma bugün de zırhla elde çekilir.</p>
+        <ul class="yil-satirlar">
+          <li><b>1998</b><span>Öz Bakırköy Dürümcüsü açıldı.</span></li>
+          <li><b>2018</b><span>Yirminci yılı misafirlerimizle kutladık.</span></li>
+          <li><b>2026</b><span>Bugün: 28 yıldır aynı usulle.</span></li>
+        </ul>
+        <div class="yil-cta"><a class="btn btn--yaprak" href="hakkimizda.html">Hikâyemiz <i class="ph ph-arrow-right"></i></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bolum bolum--yaprak iletisim" id="iletisim" aria-labelledby="iletisim-baslik">
+    <div class="wrap iletisim-grid">
+      <div class="iletisim-sol" data-yuksel>
+        <h2 class="baslik-2" id="iletisim-baslik">Ebuziya Caddesi, Bakırköy</h2>
+        <p class="lead">Cevizlik Mahallesi'nde; Bakırköy Marmaray istasyonuna ve Cumhuriyet Meydanı'na yürüme mesafesinde.</p>
+        <dl class="bilgiler">
+          <div><dt>Adres</dt><dd>Cevizlik Mah. Ebuziya Caddesi, Şehit Nusret Sokak No: 2, Bakırköy / İstanbul</dd></div>
+          <div><dt>Telefon</dt><dd><a href="tel:+902125710420">0212 571 04 20</a><br><a href="tel:+902125708130">0212 570 81 30</a></dd></div>
+          <div><dt>E-posta</dt><dd><a href="mailto:info@ozbakirkoydurumcusu.com">info<wbr>@ozbakirkoydurumcusu.com</a></dd></div>
+        </dl>
+        <div class="iletisim-cta"><a class="btn btn--ana" href="tel:+902125710420"><i class="ph ph-phone"></i>0212 571 04 20</a><a class="btn btn--cizgi" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.97535567930429,28.872827115819305" target="_blank" rel="noopener"><i class="ph ph-navigation-arrow"></i>Yol tarifi</a></div>
+      </div>
+      <div class="harita">
+        <iframe title="Öz Bakırköy Dürümcüsü konumu" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=40.97535567930429,28.872827115819305&amp;z=17&amp;hl=tr&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="alt">
+  <div class="wrap alt-grid">
+    <div class="alt-marka">
+      <a class="alt-logo" href="index.html" aria-label="Öz Bakırköy Dürümcüsü, ana sayfa"><img src="../../kaynak/logo/logo-rozet-320.png" width="320" height="320" alt="Öz Bakırköy Dürümcüsü logosu, since 1998" loading="lazy"></a>
+      <p>Cevizlik Mah. Ebuziya Caddesi, Şehit Nusret Sokak No: 2, Bakırköy / İstanbul</p>
+      <p><a href="tel:+902125710420">0212 571 04 20</a> · <a href="tel:+902125708130">0212 570 81 30</a></p>
+      <a class="ig" href="https://www.instagram.com/ozbakirkoydurum/" target="_blank" rel="noopener"><i class="ph ph-instagram-logo" aria-hidden="true"></i>@ozbakirkoydurum</a>
+    </div>
+    <nav aria-labelledby="alt-menu">
+      <h2 id="alt-menu">Menü</h2>
+      <a href="menu/kebaplar.html">Porsiyon kebaplar</a>
+      <a href="menu/durumler.html">Dürümler</a>
+      <a href="menu/corba-ve-salata.html">Çorba ve salata</a>
+      <a href="menu/tatlilar.html">Tatlılar</a>
+    </nav>
+    <nav aria-labelledby="alt-hizmet">
+      <h2 id="alt-hizmet">Hizmetler</h2>
+      <a href="hizmetler/ozel-gun-ve-organizasyon.html">Özel gün ve organizasyon</a>
+      <a href="hizmetler/hizli-servis.html">Paket servis</a>
+      <a href="hizmetler/kaliteli-hizmet.html">Temiz mutfak</a>
+    </nav>
+    <nav aria-labelledby="alt-kurumsal">
+      <h2 id="alt-kurumsal">Kurumsal</h2>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="kampanyalar.html">Kampanyalar</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </div>
+  <div class="wrap alt-son"><span class="copy">© 2026 Öz Bakırköy Dürümcüsü</span><span class="since">Since 1998</span></div>
+</footer>
+
+<nav class="altbar" aria-label="Hızlı işlemler">
+  <a href="tel:+902125710420"><i class="ph ph-phone" aria-hidden="true"></i>Ara</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=40.97535567930429,28.872827115819305" target="_blank" rel="noopener"><i class="ph ph-navigation-arrow" aria-hidden="true"></i>Yol tarifi</a>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="betik.js"></script>
+</body>
+</html>
