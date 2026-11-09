@@ -4,6 +4,8 @@
   --yaprak:#64AB03; --krem:#F6FCDF; --kurdele:#49910B; --orman:#0F2308;
   --acik:#DCEEA6; --kagit:#FBFEEE;
   --r:20px; --r-s:12px; --kenar:64px; --nav:94px;
+  /* viewport-fit=cover açık: yatay tutulan çentikli iPhone'da içerik çentiğin arkasına girmesin (dik ekranda ve başka cihazlarda değer --kenar'la aynı). */
+  --kenar-sol:max(var(--kenar),env(safe-area-inset-left,0px)); --kenar-sag:max(var(--kenar),env(safe-area-inset-right,0px));
   --b:"Rubik",system-ui,sans-serif; --g:"Albert Sans",system-ui,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -16,7 +18,7 @@ p{margin:0;text-wrap:pretty}
 ul,ol{margin:0;padding:0;list-style:none}
 button{font:inherit;color:inherit}
 :focus-visible{outline:3px solid var(--orman);outline-offset:3px;border-radius:6px}
-.wrap{width:100%;max-width:1320px;margin:0 auto;padding-inline:var(--kenar)}
+.wrap{width:100%;max-width:1320px;margin:0 auto;padding-inline:var(--kenar-sol) var(--kenar-sag)}
 .sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .lead{max-width:58ch;font-size:clamp(18px,1.5vw,22px);line-height:1.5}
 .baslik-2{font-size:clamp(34px,4.6vw,64px)}
@@ -36,7 +38,7 @@ button{font:inherit;color:inherit}
 .menu-toggle{place-items:center;width:46px;height:46px;border:0;border-radius:var(--r);background:var(--orman);color:var(--krem);font-size:24px;cursor:pointer}
 .nav-call-icon{place-items:center;width:46px;height:46px;border-radius:var(--r);border:2.5px solid var(--orman);font-size:22px}
 
-.sheet{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;gap:28px;padding:18px var(--kenar) 32px;background:var(--yaprak);overflow:auto;
+.sheet{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;gap:28px;padding:18px var(--kenar-sag) calc(32px + env(safe-area-inset-bottom,0px)) var(--kenar-sol);background:var(--yaprak);overflow:auto;
   transform:translateY(-100%);visibility:hidden;transition:transform .45s cubic-bezier(.7,0,.2,1),visibility 0s .45s}
 .sheet.is-open{transform:none;visibility:visible;transition:transform .45s cubic-bezier(.7,0,.2,1)}
 .sheet-top{display:flex;align-items:center;justify-content:space-between;gap:16px}
@@ -47,7 +49,13 @@ button{font:inherit;color:inherit}
 .sheet>*{flex-shrink:0}
 .sheet .sheet-logo-kap{flex:1 1 0;min-height:0;max-height:240px;margin-top:auto;display:flex;justify-content:center;align-items:flex-end}
 .sheet-logo{display:block;width:auto;height:auto;max-width:72vw;max-height:100%;object-fit:contain;filter:drop-shadow(0 16px 20px rgba(15,35,8,.26))}
-@media (max-height:700px){.sheet .sheet-logo-kap{display:none}}
+/* Kısa ekranda menü yazıları küçülür, logoya yer açılır. Safari'nin araç çubuğu açıkken iPhone'un görünür alanı 553 ile 739 px arasıdır (iPhone 15: 393x659). */
+@media (max-height:780px){
+  .sheet{gap:18px;padding-bottom:calc(20px + env(safe-area-inset-bottom,0px))}
+  .sheet nav{gap:0}
+  .sheet nav a{padding:5px 0;font-size:clamp(28px,8.4vw,34px)}
+}
+@media (max-height:520px){.sheet .sheet-logo-kap{display:none}}
 
 /* ---------- Düğmeler ---------- */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:58px;padding:0 26px;border:2.5px solid var(--orman);border-radius:var(--r);font:800 18px/1 var(--b);cursor:pointer;
@@ -320,9 +328,9 @@ button{font:inherit;color:inherit}
 .isik img{width:auto;height:auto;max-width:min(92vw,1400px);max-height:78dvh;border-radius:var(--r)}
 .isik figcaption{color:var(--krem);font:800 20px/1.2 var(--b)}
 .isik-dugme{position:fixed;display:grid;place-items:center;width:56px;height:56px;border:3px solid var(--orman);border-radius:50%;background:var(--yaprak);color:var(--orman);font-size:26px;cursor:pointer}
-.isik-kapat{top:18px;right:18px}
-.isik-geri{left:18px;top:50%;margin-top:-28px}
-.isik-ileri{right:18px;top:50%;margin-top:-28px}
+.isik-kapat{top:18px;right:max(18px,env(safe-area-inset-right,0px))}
+.isik-geri{left:max(18px,env(safe-area-inset-left,0px));top:50%;margin-top:-28px}
+.isik-ileri{right:max(18px,env(safe-area-inset-right,0px));top:50%;margin-top:-28px}
 
 /* ---------- Form ---------- */
 .form-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px;align-items:start}
@@ -424,7 +432,7 @@ button{font:inherit;color:inherit}
   .alt-grid{grid-template-columns:1fr 1fr;gap:34px 24px}
   .alt-marka{grid-column:1/-1}
   .son-cta{align-items:flex-start}
-  .altbar{position:fixed;left:0;right:0;bottom:0;z-index:55;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 14px calc(12px + env(safe-area-inset-bottom));background:var(--orman)}
+  .altbar{position:fixed;left:0;right:0;bottom:0;z-index:55;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px max(14px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(14px,env(safe-area-inset-left,0px));background:var(--orman)}
   .altbar a{display:flex;align-items:center;justify-content:center;gap:8px;height:50px;border-radius:var(--r);color:var(--orman);font:800 16px/1 var(--b)}
   .altbar a:first-child{background:var(--krem)}
   .altbar a:last-child{background:var(--yaprak)}
