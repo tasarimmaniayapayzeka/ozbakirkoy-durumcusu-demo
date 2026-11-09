@@ -159,7 +159,7 @@ h1, h2, h3 { font-weight: 800; }
 .hizmet h3 { font: 800 clamp(2.1rem, 4.4vw, 4.4rem)/.9 var(--font); font-stretch: 62%; text-transform: uppercase; }
 .hizmet p { color: var(--text-2); max-width: 42ch; }
 
-/* Hakkımızda: 1996 */
+/* Hakkımızda: 1998 */
 .hakkimizda { background: var(--bg-2); }
 .yil-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(32px, 5vw, 88px); align-items: end; }
 .yil { font: 800 clamp(8rem, 25vw, 25rem)/.78 var(--font); font-stretch: 62%; letter-spacing: -.02em; }
